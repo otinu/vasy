@@ -1,8 +1,8 @@
 
 const app = Vue.createApp({
     data: () => ({
-        test: "Hello vasy"
+        open: false,
     }),
-  })
+})
 
 app.mount('#app')

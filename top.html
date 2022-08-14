@@ -1,14 +1,25 @@
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="stylesheet" href="css/top.css" />
   <title>vasy</title>
 </head>
 <body>
   <div id="app">
-    <div class="test">{{test}}</div>
+    
+    <button type="button" class="menu-btn" v-on:click="open=!open">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <div class="menu" v-bind:class="{'is-active' : open }">
+      <div class="menu__item">TOP</div>
+      <div class="menu__item">ABOUT</div>
+      <div class="menu__item">BLOG</div>
+      <div class="menu__item">CONTACT</div>
+    </div>
   </div>
+
   <script src="https://unpkg.com/vue@next"></script>
   <script src="js/top.js"></script>
 </body>
