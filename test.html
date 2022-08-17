@@ -1,0 +1,24 @@
+
+<!-- Loadingアニメーション 
+　　　⇒ Vue3と共存できず、top.htmlに貼り付けるとエラー発生 -->
+<head>
+  <link rel="stylesheet" href="css/test.css" />
+</head>
+<html>
+<body>
+    
+  <div id="app">
+    <carousel :items-to-show="2.5" :wrap-around="true">
+      <slide v-for="slide in 10" :key="slide">
+        <div class="carousel__item">{{ slide }}</div>
+      </slide>
+  
+      <template #addons>
+        <navigation />
+      </template>
+    </carousel>
+  </div>
+
+  <script src="js/test.js"></script>
+</body>
+</html>
