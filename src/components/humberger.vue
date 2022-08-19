@@ -1,13 +1,5 @@
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-  <link rel="stylesheet" href="css/top.css" />
-  <title>vasy</title>
-</head>
-<body>
+<template>
   <div id="app">
-    
     <button type="button" class="menu-btn" v-on:click="open=!open">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
@@ -20,6 +12,12 @@
     </div>
   </div>
 
-  <script src="https://unpkg.com/vue@next"></script>
-  <script src="js/top.js"></script>
-</body>
+  <script>
+    const app = Vue.createApp({
+      data: () => ({
+        open: false,
+      }),
+    });
+    app.mount("#app");
+  </script>
+</template>

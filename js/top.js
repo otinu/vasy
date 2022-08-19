@@ -4,5 +4,4 @@ const app = Vue.createApp({
         open: false,
     }),
 })
-
 app.mount('#app')
