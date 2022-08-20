@@ -1,5 +1,6 @@
 <template>
 <div id="app">
+  <ScreenTransitionLoading :active="isLoading" />
   <form
     id="login-form"
     @submit.prevent="submit"
@@ -19,7 +20,8 @@
 export default {
   data() {
     return {
-      fullPage: false
+      fullPage: false,
+      isLoading: true
     };
   },
   methods: {

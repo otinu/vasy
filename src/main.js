@@ -19,5 +19,6 @@ import "vue-loading-overlay/dist/vue-loading.css";
 
 const app = createApp(App).use(router)
 app.component('user-information', UserInformation)
-app.use(Loading)
+app.component("ScreenTransitionLoading", Loading);
+app.use(Loading) // ボタン押下時のローディング
 app.mount('#app')
