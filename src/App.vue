@@ -3,10 +3,13 @@
 <template>
   <router-link to="/">Home</router-link><br />
   <router-link to="/about">About</router-link><br />
-  <router-link to="/test">Test</router-link><br />
+  <router-link to="/carousel">Carousel</router-link><br />
+  <router-link to="/loading">TestLoading</router-link><br />
 <h1>ここが共通！</h1>
   <router-view />
 </template>
+
+
 
 <style>
 #app {
