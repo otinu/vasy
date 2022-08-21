@@ -4,12 +4,8 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import Carousel from "../components/Carousel.vue";
 
 export default defineComponent({
-  components: {
-    Carousel,
-  },
   setup() {
     const _images = [
       { id: 1, url: "https://picsum.photos/300/200?q=1" },

@@ -11,6 +11,7 @@
     <label><input type="checkbox" v-model="fullPage" />Full page?</label>
     <button type="submit">Login</button>
   </form>
+
 </div>
 </template>
 
