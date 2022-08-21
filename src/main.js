@@ -22,19 +22,6 @@ const app = createApp(App)
 app.use(router)
 app.component('user-information', UserInformation)
 app.component("ScreenTransitionLoading", Loading);
-
-app.directive('ripple', Ripple);
-app.component("RippleButton", {
-    // renderの部分には、「h」を使わず、本来の形で記述
-    render: function(createElement) {
-      return createElement(App)
-  }
-})
-
-
+app.directive('ripple', Ripple); // 「v-ripple」というカスタムディレクティブを設定
 app.use(Loading) // ボタン押下時のローディング
-
-
-
-
 app.mount('#app')
