@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="top">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="msgプロパティを表示しています"/>
   </div>
@@ -10,7 +10,7 @@
     </button>
     <div class="menu" v-bind:class="{'is-active' : open }">
       <div class="menu__item">TOP</div>
-      <div class="menu__item">ABOUT</div>
+      <div class="menu__item">Vegetable</div>
       <div class="menu__item">BLOG</div>
       <div class="menu__item">CONTACT</div>
     </div>
@@ -23,7 +23,7 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'HomeView',
+  name: 'TopPage',
   data: () => ({
         open: false,
     }),

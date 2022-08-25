@@ -1,19 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
+import Top from '../views/Top.vue'
+import Vegetable from '../views/Vegetable.vue'
+import Recipe from '../views/Recipe.vue'
 import TestCarousel from '../views/TestCarousel.vue'
 import TestLoading from '../views/TestLoading.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'top',
+    component: Top
   },
   {
-    path: '/about',
-    name: 'about',
-    component: AboutView
+    path: '/vegetable',
+    name: 'vegetable',
+    component: Vegetable
+  },
+  {
+    path: '/recipe',
+    name: 'recipe',
+    component: Recipe
   },
   {
     path: '/carousel',

@@ -9,8 +9,9 @@
   <!-- <HumbergerMenu/> -->
   <h2>Vasy</h2>
 </header>
-  <router-link to="/">Home</router-link><br />
-  <router-link to="/about">About</router-link><br />
+  <router-link to="/">Top</router-link><br />
+  <router-link to="/vegetable">Vegetable</router-link><br />
+  <router-link to="/recipe">Recipe</router-link><br />
   <router-link to="/carousel">Carousel</router-link><br />
   <router-link to="/loading">TestLoading</router-link><br />
   <router-view />
