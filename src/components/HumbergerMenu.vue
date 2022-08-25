@@ -12,6 +12,7 @@
     </div>
   </div>
 
+<!--
   <script>
     const app = Vue.createApp({
       data: () => ({
@@ -20,4 +21,5 @@
     });
     app.mount("#app");
   </script>
+-->
 </template>

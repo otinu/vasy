@@ -1,7 +1,8 @@
 <template>
 
   <div id="app">
-    <button v-ripple="'rgba(100, 25, 5, 0.35)'"  class="button">リップルボタン</button>
+    <br>
+    <button type="button" class="btn btn-primary" v-ripple="'rgba(100, 25, 5, 0.35)'">リップルボタン</button>
   </div>
 
   </template>

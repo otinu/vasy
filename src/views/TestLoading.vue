@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-  <ScreenTransitionLoading :active="isLoading" />
+  <ScreenTransitionLoading :active="isLoading" @click.prevent="loadingCancel()" />
   <form
     id="login-form"
     @submit.prevent="submit"
@@ -29,6 +29,8 @@ export default {
     submit() {
       let loader = this.$loading.show({
         // Optional parameters
+        loader: 'bars', // spinner\dots
+        color: "red",
         container: this.fullPage ? null : this.$refs.formContainer,
         canCancel: true,
         onCancel: this.onCancel
@@ -40,6 +42,9 @@ export default {
     },
     onCancel() {
       console.log("User cancelled the loader.");
+    },
+    loadingCancel() {
+      this.isLoading = false
     }
   }
 };

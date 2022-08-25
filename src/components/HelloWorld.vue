@@ -1,6 +1,8 @@
 <template>
   <div class="hello"></div>
 
+<h1>{{ msg }}</h1>
+
   <user-information
     name="taro"
     age="18"

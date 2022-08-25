@@ -1,13 +1,37 @@
 <!-- このファイルが全ファイル共通になるvueファイル -->
 
 <template>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<header>
+  <!-- <HumbergerMenu/> -->
+  <h2>Vasy</h2>
+</header>
   <router-link to="/">Home</router-link><br />
   <router-link to="/about">About</router-link><br />
   <router-link to="/carousel">Carousel</router-link><br />
   <router-link to="/loading">TestLoading</router-link><br />
-<h1>ここが共通！</h1>
   <router-view />
 </template>
+
+<!--
+<script>
+import HumbergerMenu from '@/components/HumbergerMenu.vue'
+
+export default {
+  name: 'HumbergerMenu',
+  components: {
+    HumbergerMenu
+  },
+  data() {
+    return {
+      open: false,
+    };
+  }
+}
+</script>
+-->
 
 
 
