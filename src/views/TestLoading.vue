@@ -1,5 +1,6 @@
 <template>
 <div id="app">
+  <humberger-menu></humberger-menu>
   <ScreenTransitionLoading :active="isLoading" @click.prevent="loadingCancel()" />
   <form
     id="login-form"

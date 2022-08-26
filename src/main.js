@@ -8,24 +8,7 @@ import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
 import Ripple from 'vue3-whr-ripple-directive'
 
-
-// console.log("ここが全ファイル共通のJSファイル！")
-
-
-
 const app = createApp(App)
-
-/*
-const app = createApp({
-    rootComponent: App,
-    data: () => ({
-        open: false,
-    }),
-})
-// app.use(App)
-*/
-
-
 app.use(router)
 app.component('humberger-menu', HumbergerMenu)
 app.component("ScreenTransitionLoading", Loading)

@@ -1,4 +1,5 @@
 <template>
+  <humberger-menu></humberger-menu>
   <div class="slide__wrapper">
     <div v-show="index === page" v-for="(image, index) in images" :key="index">
       <img :src="image.src" class="image" />

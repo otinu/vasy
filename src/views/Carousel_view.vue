@@ -1,4 +1,5 @@
 <template>
+  <humberger-menu></humberger-menu>
   <Carousel :images="images" @deleteImage="handelDeleteImage" />
 </template>
 

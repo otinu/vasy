@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Top from '../views/Top.vue'
-import Vegetable from '../views/Vegetable.vue'
-import Recipe from '../views/Recipe.vue'
-import TestCarousel from '../views/TestCarousel.vue'
-import TestLoading from '../views/TestLoading.vue'
+import Top from '@/views/Top.vue'
+import Vegetable from '@/views/Vegetable.vue'
+import Recipe from '@/views/Recipe.vue'
+import TestCarousel from '@/views/TestCarousel.vue'
+import TestLoading from '@/views/TestLoading.vue'
 
 const routes = [
   {
