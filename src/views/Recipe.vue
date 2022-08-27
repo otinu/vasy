@@ -5,8 +5,6 @@
     <div class="d-md-none">
       <humberger-menu></humberger-menu>
     </div>
-
-    <button v-ripple="'rgba(255, 255, 255, 0.35)'"  class="btn btn-success">リップルボタン</button>
 </template>
 
 <script>
