@@ -4,7 +4,8 @@
       <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
     <div class="menu" v-bind:class="{'is-active' : open }">
-      <router-link to="/" class="menu__item">TOP</router-link>
+      <router-link to="/" class="menu__item"><button v-ripple="'rgba(255, 255, 255, 0.35)'"  class="btn btn-success">Index</button></router-link>
+      
       <router-link to="/vegetable" class="menu__item">Vegetable</router-link>
       <router-link to="/recipe" class="menu__item">Recipe</router-link>
       <router-link to="/carousel">Carousel</router-link>

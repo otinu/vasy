@@ -143,7 +143,7 @@
 
 <script>
 export default {
-  name: "TopPage",
+  name: "IndexPage",
   data: () => ({
     open: false,
   }),

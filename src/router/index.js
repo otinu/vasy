@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Top from '@/views/Top.vue'
+import Index from '@/views/Index.vue'
 import Vegetable from '@/views/Vegetable.vue'
 import Recipe from '@/views/Recipe.vue'
 import TestCarousel from '@/views/TestCarousel.vue'
@@ -8,8 +8,8 @@ import TestLoading from '@/views/TestLoading.vue'
 const routes = [
   {
     path: '/',
-    name: 'top',
-    component: Top
+    name: 'index',
+    component: Index
   },
   {
     path: '/vegetable',
