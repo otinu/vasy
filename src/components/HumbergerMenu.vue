@@ -28,7 +28,7 @@ export default {
 <style scope>
 .menu-btn{
     position: fixed;
-    top: 4vh;
+    top: 1vh;
     left: 20px;
     z-index: 3;
     width: 3rem;
@@ -36,8 +36,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: green;
-    color: #fff;
+    background: rgba(221, 221, 221, 0.6);
+    color: black;
   }
   
   /* メニュー本体 */
@@ -53,7 +53,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #555;
+    background: rgba(34, 139, 34, 0.9);
   }
   .menu__item{
     width: 100%;
